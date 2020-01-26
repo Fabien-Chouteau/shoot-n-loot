@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="20" height="16" tilewidth="8" tileheight="8" nextobjectid="48">
+ <tileset firstgid="1" source="8x8_Pixel_minimalist.tsx"/>
+ <tileset firstgid="121" source="font1.tsx"/>
+ <tileset firstgid="596" source="font2.tsx"/>
+ <tileset firstgid="1451" source="green_eye_idle.tsx"/>
+ <tileset firstgid="1458" source="mini character fire.tsx"/>
+ <tileset firstgid="1462" source="mini_character_reload.tsx"/>
+ <layer name="Tile Layer 1" width="20" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="Item">
+  <object id="1" name="Chest_Closed" gid="47" x="0" y="8" width="8" height="8"/>
+  <object id="2" name="Chest_Open" gid="48" x="0" y="24" width="8" height="8"/>
+  <object id="4" name="Menu_Cursor" gid="130" x="24" y="40" width="8" height="8"/>
+  <object id="5" name="Empty_Tile" gid="8" x="24" y="8" width="8" height="8"/>
+  <object id="7" name="D0" gid="612" x="48" y="8" width="8" height="8"/>
+  <object id="8" name="D1" gid="613" x="56" y="8" width="8" height="8"/>
+  <object id="9" name="D2" gid="614" x="64" y="8" width="8" height="8"/>
+  <object id="10" name="D3" gid="615" x="72" y="8" width="8" height="8"/>
+  <object id="11" name="D4" gid="616" x="80" y="8" width="8" height="8"/>
+  <object id="12" name="D5" gid="617" x="88" y="8" width="8" height="8"/>
+  <object id="13" name="D6" gid="618" x="96" y="8" width="8" height="8"/>
+  <object id="14" name="D7" gid="619" x="104" y="8" width="8" height="8"/>
+  <object id="15" name="D8" gid="620" x="112" y="8" width="8" height="8"/>
+  <object id="16" name="D9" gid="621" x="120" y="8" width="8" height="8"/>
+  <object id="17" name="Dot" gid="610" x="128" y="8" width="8" height="8"/>
+  <object id="20" name="Coin" gid="29" x="0" y="40" width="8" height="8"/>
+  <object id="22" name="M1" gid="1451" x="0" y="56" width="8" height="8"/>
+  <object id="23" name="M2" gid="1452" x="8" y="56" width="8" height="8"/>
+  <object id="24" name="M3" gid="1453" x="16" y="56" width="8" height="8"/>
+  <object id="25" name="M4" gid="1454" x="24" y="56" width="8" height="8"/>
+  <object id="26" name="M5" gid="1455" x="32" y="56" width="8" height="8"/>
+  <object id="27" name="M6" gid="1456" x="40" y="56" width="8" height="8"/>
+  <object id="28" name="M7" gid="1457" x="48" y="56" width="8" height="8"/>
+  <object id="29" name="P1" gid="1458" x="0" y="72" width="8" height="8"/>
+  <object id="30" name="P2" gid="1459" x="8" y="72" width="8" height="8"/>
+  <object id="31" name="P3" gid="1460" x="16" y="72" width="8" height="8"/>
+  <object id="32" name="P4" gid="1461" x="24" y="72" width="8" height="8"/>
+  <object id="33" name="P5" gid="1462" x="0" y="88" width="8" height="8"/>
+  <object id="34" name="P6" gid="1463" x="8" y="88" width="8" height="8"/>
+  <object id="35" name="P7" gid="1464" x="16" y="88" width="8" height="8"/>
+  <object id="36" name="P8" gid="1465" x="24" y="88" width="8" height="8"/>
+  <object id="39" name="P9" gid="1466" x="32" y="88" width="8" height="8"/>
+  <object id="40" name="P10" gid="1467" x="40" y="88" width="8" height="8"/>
+  <object id="41" name="P11" gid="1468" x="48" y="88" width="8" height="8"/>
+  <object id="42" name="P12" gid="1469" x="56" y="88" width="8" height="8"/>
+  <object id="43" name="P13" gid="1470" x="64" y="88" width="8" height="8"/>
+  <object id="44" name="Bullet" gid="6" x="40" y="24" width="8" height="8"/>
+  <object id="45" name="Exit_Portal" gid="11" x="24" y="24" width="8" height="8"/>
+ </objectgroup>
+</map>
