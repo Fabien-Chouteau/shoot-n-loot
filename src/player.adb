@@ -226,7 +226,7 @@ package body Player is
          else
             --  Friction on the floor
             P.Apply_Force (
-                           (Value (Value (-900.0) * P.Speed.X),
+                           (Value (Value (-2000.0) * P.Speed.X),
                            0.0));
          end if;
       else
@@ -385,9 +385,9 @@ package body Player is
             if not Proj.Alive then
 
                if Facing_Left then
-                  Proj.Set_Speed ((-120.0, 0.0));
+                  Proj.Set_Speed ((-120.0 + P.Speed.X, 0.0));
                else
-                  Proj.Set_Speed ((120.0, 0.0));
+                  Proj.Set_Speed ((120.0 + P.Speed.X, 0.0));
                end if;
 
                Proj.Spawn (Pos => P.Position,
