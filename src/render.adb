@@ -21,10 +21,8 @@ package body Render is
    -----------------
 
    procedure Push_Pixels (Buffer : GESTE.Output_Buffer) is
-      Send_Buffer : HAL.UInt16_Array (1 .. Buffer_Size)
-        with Address => Buffer'Address;
    begin
-      PyGamer.Screen.Push_Pixels (Send_Buffer (Buffer'First .. Buffer'Last));
+      PyGamer.Screen.Push_Pixels (Buffer'Address, Buffer'Length);
    end Push_Pixels;
 
    ----------------------
@@ -106,10 +104,8 @@ package body Render is
 
          Sound.Tick;
          Controls.Scan;
-
          Time.Delay_Until (Next_Release);
          Next_Release := Next_Release + Period;
-
       end loop;
    end Scroll_New_Scene;
 

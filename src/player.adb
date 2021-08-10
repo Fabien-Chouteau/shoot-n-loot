@@ -104,13 +104,17 @@ package body Player is
       for Pt of Points loop
 
          if Show_Collision_Points then
-            PyGamer.Screen.Set_Address (UInt16 (X + Pt.X),
-                                        UInt16 (X + Pt.X),
-                                        UInt16 (Y + Pt.Y),
-                                        UInt16 (Y + Pt.Y));
-            PyGamer.Screen.Start_Pixel_TX;
-            PyGamer.Screen.Push_Pixels ((0 => UInt16'Last));
-            PyGamer.Screen.End_Pixel_TX;
+            declare
+               Data : aliased HAL.UInt16_Array := (0 => 0);
+            begin
+               PyGamer.Screen.Set_Address (UInt16 (X + Pt.X),
+                                           UInt16 (X + Pt.X),
+                                           UInt16 (Y + Pt.Y),
+                                           UInt16 (Y + Pt.Y));
+               PyGamer.Screen.Start_Pixel_TX;
+               PyGamer.Screen.Push_Pixels (Data'Address, Data'Length);
+               PyGamer.Screen.End_Pixel_TX;
+            end;
          end if;
 
          if

@@ -16,7 +16,6 @@ use PyGamer;
 
 with GESTE_Config; use GESTE_Config;
 with GESTE;
-with GESTE.Text;
 with GESTE.Tile_Bank;
 with GESTE.Grid;
 

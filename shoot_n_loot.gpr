@@ -8,6 +8,8 @@ project Shoot_N_Loot extends "geste.gpr" is
    for Object_Dir use "obj_target";
    for Languages use ("Ada", "ASM_CPP", "C");
 
+   for Excluded_Source_Files use ("main_simulator.adb");
+
    for Target use PyGamer_BSP'Runtime ("Ada");
    for Runtime ("Ada") use PyGamer_BSP'Runtime ("Ada");
 

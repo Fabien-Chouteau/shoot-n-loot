@@ -1,5 +1,4 @@
 with "pygamer_simulator.gpr";
-with "hal.gpr";
 with "virtapu.gpr";
 
 project Shoot_N_Loot_Simulator extends "geste.gpr" is
@@ -7,11 +6,11 @@ project Shoot_N_Loot_Simulator extends "geste.gpr" is
    for Source_Dirs use ("src/**");
    for Object_Dir use "obj_simulator";
    for Languages use ("Ada");
-
-   for Main use ("main.adb");
+   for Excluded_Source_Files use ("main.adb", "arith_64.ads", "arith_64.ads");
+   for Main use ("main_simulator.adb");
 
    package Builder is
-      for Executable ("main.adb") use "shoot_n_loot_sim";
+      for Executable ("main_simulator.adb") use "shoot_n_loot_sim";
    end Builder;
 
 end Shoot_N_Loot_Simulator;

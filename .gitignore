@@ -5,3 +5,7 @@
 *.ali
 
 alire/
+config/
+alire.lock
+obj_simulator
+obj_target
